@@ -47,7 +47,6 @@ h1 {
 
 .container .beatInfo--visible {
     display: block;
-    background-color: #655560;
     animation: fadeVisibility 0.8s;
 }
 
@@ -61,7 +60,9 @@ h1 {
 }
 
 .container .container-actions button {
+    font-family: Axis;
     border-radius: 50px;
+    background: none;   
     border: 0;
     font-weight: bold;
     cursor: pointer;
@@ -83,11 +84,52 @@ h1 {
 }
 
 .container .beatInfo ul {
-    padding: 0;
+    padding-left: 0;
     overflow: hidden;
     margin: 0;
-    text-align: center;
+    text-align: left;
 }
+
+.footer {
+    margin-top: 2%;
+    border-radius: 5px;
+    border-color: white;
+    padding: 0%;
+    justify-content: center;
+    align-items: center;
+}
+.fab {
+    padding: 20px;
+    width: 50;
+    margin: 5px 2px;
+}
+
+.fas {
+    padding: 20px;
+    width: 50;
+    margin: 5px 2px;
+}
+
+.fab:hover {
+    cursor: pointer;
+    opacity: .7;
+}
+
+.fa-instagram-square {
+    background: #125688;
+    color: white;
+}
+
+.fa-envelope-square {
+    background: #00b489;
+    color: white;
+}
+
+.fa-youtube-square {
+    background: #bb0000;
+    color: white;
+}
+
 
 @keyframes fadeVisibility {
     0% {
