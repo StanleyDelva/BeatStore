@@ -97,10 +97,7 @@ footer {
     position: absolute;
     width: 100%;
     overflow: hidden;
-    text-align: center;
-    justify-content: center;
-    justify-items: center;
-    transform: translateX(-8px);
+
 }
 
 .footer {
@@ -136,6 +133,15 @@ footer {
 .fa-youtube-square {
     background: #bb0000;
     color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    footer {
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+        transform: translateX(-8px);
+    }
 }
 
 
