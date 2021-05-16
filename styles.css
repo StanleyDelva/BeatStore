@@ -1,0 +1,101 @@
+@font-face {
+    font-family: Axis;
+    src: url(./fonts/Axis\ Extrabold.otf);
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: UniNeueLight;
+    src: url(./fonts/Fontfabric\ -\ UniNeueLight.otf);
+}
+
+
+
+body {
+    font-family: UniNeueLight;
+    background-color: rgb(199, 180, 159);
+}
+
+h1 {
+    font-family: Axis;
+    margin: auto;
+    text-align: center;
+}
+
+.container {
+    margin: auto;
+    margin-top: 100px;
+    max-width: 300px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+.container .beatInfo,
+.container .beatInfo--hidden {
+    display: none;
+}
+
+.container .beatInfo img {
+    width: 100%;
+    max-width: 300px;
+    max-height: 300px;
+    margin: 0;
+}
+
+.container .beatInfo--visible {
+    display: block;
+    background-color: #655560;
+    animation: fadeVisibility 0.8s;
+}
+
+.container .container-actions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 36%;
+    transform: translateY(-36%);
+}
+
+.container .container-actions button {
+    border-radius: 50px;
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+.container .container-actions button#container_button--prev {
+    margin-left: 20px;
+}
+
+.container .container-actions button#container_button--next {
+    margin-right: 20px;
+}
+
+
+.beat {
+    max-height: 300px;
+}
+
+.container .beatInfo ul {
+    padding: 0;
+    overflow: hidden;
+    margin: 0;
+    text-align: center;
+}
+
+@keyframes fadeVisibility {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: opacity linear;
+    }
+}
