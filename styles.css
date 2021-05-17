@@ -49,6 +49,11 @@ h1 {
 .container .beatInfo--visible {
     display: block;
     animation: fadeVisibility 0.5s;
+    box-shadow: 20px 20px 20px 20px rgba(189, 167, 142, 0.6);
+}
+
+.beatInfo--visible, .beatInfo img {
+    border-radius: 5%;
 }
 
 .container .container-actions {
@@ -85,7 +90,7 @@ h1 {
 }
 
 .container .beatInfo ul {
-    padding-left: 0;
+    padding-left: 2%;
     overflow: hidden;
     margin: 0;
     text-align: left;
@@ -110,8 +115,8 @@ footer {
 }
 
 .fab, .fas {
+    border-radius: 10%;
     padding: 20px;
-    width: 50;
     margin: 5px 2px;
 }
 
@@ -120,17 +125,17 @@ footer {
     opacity: .7;
 }
 
-.fa-instagram-square {
+.fa-instagram {
     background: #125688;
     color: white;
 }
 
-.fa-envelope-square {
+.fa-envelope {
     background: #00b489;
     color: white;
 }
 
-.fa-youtube-square {
+.fa-youtube {
     background: #bb0000;
     color: white;
 }
