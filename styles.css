@@ -25,7 +25,7 @@ h1 {
 
 .container {
     margin: auto;
-    margin-top: 100px;
+    margin-top: 50px;
     max-width: 300px;
     position: relative;
     justify-content: center;
@@ -50,6 +50,12 @@ h1 {
     display: block;
     animation: fadeVisibility 0.5s;
     box-shadow: 20px 20px 20px 20px rgba(189, 167, 142, 0.6);
+
+}
+
+.beatInfo--noDetails {
+    height: 300px;
+    transition: max-height 0.3s ease in;
 }
 
 .beatInfo--visible, .beatInfo img {
@@ -89,11 +95,27 @@ h1 {
     max-height: 300px;
 }
 
+.beat img:hover {
+    cursor: pointer;
+}
+
 .container .beatInfo ul {
     padding-left: 2%;
     overflow: hidden;
     margin: 0;
     text-align: left;
+
+}
+
+ul {
+    transform: translateY(0%);
+    opacity: 1;
+    transition: transform 0.1s ease-in, opacity 0.3s;
+}
+.ul--hidden {
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: transform 0.3s ease-in, opacity 0.3s;
 }
 
 footer {

@@ -3,7 +3,11 @@
 let slidePosition = 0;
 
 const beats = document.getElementsByClassName('beatInfo');
-const totalBeats = beats.length; 
+const totalBeats = beats.length;
+const beatImg = document.getElementsByClassName("beat");
+const beatDetails = document.getElementsByTagName("ul");
+console.log(beatDetails);
+
 
 //event listeners
 document.getElementById('container_button--prev').addEventListener("click", function() {
@@ -13,6 +17,13 @@ document.getElementById('container_button--prev').addEventListener("click", func
 document.getElementById('container_button--next').addEventListener("click", function() {
     moveToPrevSlide();
 });
+
+for (let image of beatImg) {
+    image.addEventListener("click", function() {
+        hideDetails();
+    });
+
+}
 
 
 
@@ -44,4 +55,16 @@ function moveToPrevSlide() {
     }
 
     updateSlidePosition();
+}
+
+function hideDetails() {
+    console.log("Trying");
+    for (let beatDetail of beatDetails) {
+        beatDetail.classList.toggle("ul--hidden");
+
+    }
+
+    for (let beat of beats) {
+        beat.classList.toggle("beatInfo--noDetails");
+    }
 }
